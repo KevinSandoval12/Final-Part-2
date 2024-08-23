@@ -1,0 +1,145 @@
+html {
+  color: white;
+}
+
+header {
+  display: flex;
+  background-color: #a76d60;
+  border: solid 2px black;
+  border-radius: 10px;
+  gap: 10px;
+  padding-left: 20px;
+}
+
+header p {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-left: 25px;
+}
+
+nav {
+  margin: 0px;
+  padding: 0px;
+  border-radius: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav li {
+  display: flex;
+  width: 100%;
+  list-style-type: none;
+  border: solid 1px black;
+  justify-content: space-evenly;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  background-color: #a76d60;
+  /* border: solid 2px black; */
+}
+
+body {
+  background-color: #95afba;
+}
+
+main {
+  border: solid 2px black;
+  border-radius: 10px;
+  background-color: #0c6291;
+  margin: 0px;
+}
+
+main {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+section {
+  border: solid 2px black;
+  border-radius: 10px;
+  background-color: #0c6291;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+aside {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  border: solid 2px black;
+  border-radius: 10px;
+  background-color: rgb(61, 33, 33);
+}
+
+nav ul li {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+nav ul {
+  margin-top: 0px;
+  padding: 0px;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+}
+
+section ul {
+  display: flex;
+  flex-direction: column-reverse;
+  list-style-type: none;
+  margin: 5px;
+  padding: 5px;
+}
+
+strong {
+  text-decoration: underline;
+}
+
+aside ul {
+  margin-left: 20px;
+  padding: 0px;
+}
+
+/* Grid */
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+body aside:nth-child(1) {
+  grid-area: aside1;
+}
+
+body aside:nth-child(2) {
+  grid-area: aside2;
+}
+
+main {
+  grid-area: goals;
+}
+
+section {
+  grid-area: work;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "goals goals aside1"
+    "work work aside2";
+}
